@@ -9,12 +9,12 @@ use Symfony\Component\Filesystem\Filesystem;
 class Composer
 {
     /**
-     * We'll ensure that the GitHub Action workflows and quality tools for code standards are set up.
+     * We'll ensure that the quality tools for code standards are set up.
      */
     public static function postUpdate(ScriptEvent $event): void
     {
         // TODO: Return early if it was an install rather than update
-        // \Symfony\Component\VarDumper\VarDumper;::dump($event);
+        // \Symfony\Component\VarDumper\VarDumper::dump($event);
 
         $rootProjectDir = getcwd();
         $resourcesDir = __DIR__ . '/../resources/';
