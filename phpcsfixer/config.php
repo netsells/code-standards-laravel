@@ -197,6 +197,8 @@ $rules = [
     'whitespace_after_comma_in_array' => true,
 ];
 
+$rules['@PHP82Migration'] = true;
+
 return (new Config)
     ->setRules($rules)
     ->setRiskyAllowed(true)
