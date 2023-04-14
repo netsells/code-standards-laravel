@@ -1,6 +1,6 @@
 <?php
 
-# Source: https://github.com/laravel/pint/blob/c81e6bf94ba50d701e24b36d8751bd214ed31fa9/resources/presets/laravel.php
+# Source: https://github.com/laravel/pint/blob/7cafbb2b30ad1f83d1508a12e38089f424386238/resources/presets/laravel.php
 
 use PhpCsFixer\Config;
 
@@ -18,12 +18,9 @@ $rules = [
             'return',
         ],
     ],
-    'braces' => [
-        'allow_single_line_anonymous_class_with_empty_body' => true,
-        'allow_single_line_closure' => true,
-        'position_after_control_structures' => 'same',
-        'position_after_functions_and_oop_constructs' => 'next',
-        'position_after_anonymous_constructs' => 'next',
+    'control_structure_braces' => true,
+    'control_structure_continuation_position' => [
+        'position' => 'same_line',
     ],
     'curly_braces_position' => [
         'control_structures_opening_brace' => 'same_line',
@@ -55,6 +52,7 @@ $rules = [
     ],
     'constant_case' => ['case' => 'lower'],
     'declare_equal_normalize' => true,
+    'declare_parentheses' => true,
     'elseif' => true,
     'encoding' => true,
     'full_opening_tag' => true,
@@ -106,6 +104,7 @@ $rules = [
         'use' => 'echo',
     ],
     'no_multiline_whitespace_around_double_arrow' => true,
+    'no_multiple_statements_per_line' => true,
     'no_short_bool_cast' => true,
     'no_singleline_whitespace_before_semicolons' => true,
     'no_spaces_after_function_name' => true,
@@ -181,6 +180,7 @@ $rules = [
         'comment_types' => ['hash'],
     ],
     'single_quote' => true,
+    'single_space_around_construct' => true,
     'space_after_semicolon' => true,
     'standardize_not_equals' => true,
     'statement_indentation' => false,
