@@ -164,7 +164,9 @@ $rules = [
     'phpdoc_trim' => true,
     'phpdoc_types' => true,
     'phpdoc_var_without_name' => true,
-    'php_unit_method_casing' => 'snake_case',
+    'php_unit_method_casing' => [
+        'case' => 'snake_case'
+    ],
     'return_type_declaration' => ['space_before' => 'none'],
     'self_accessor' => false,
     'self_static_accessor' => true,
